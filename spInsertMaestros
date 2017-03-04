@@ -1,0 +1,30 @@
+DELIMITER $$
+
+CREATE PROCEDURE spInsertMaestros()
+BEGIN
+insert into estado_orden_produccion (nombre) VALUES('Procesando');
+insert into estado_orden_produccion (nombre) VALUES('Terminado');
+insert into estado_orden_produccion (nombre) VALUES('Enviado');
+insert into estado_pedido (nombre) values ('Pendiente');
+insert into estado_pedido (nombre) values ('Aprobado');
+insert into estado_pedido (nombre) values ('Rechazado');
+insert into estado_pedido (nombre) values ('Cumplido');
+insert into estado_pedido (nombre) values ('Procesando');
+insert into estado_pedido (nombre) values ('Enviado');
+insert into rol (nombre) VALUES ('Doctor');
+insert into rol (nombre) VALUES ('Asistente');
+insert into rol (nombre) VALUES ('Administrador');
+insert into rol_empleado (nombre) VALUES ('Administrador');
+insert into rol_empleado (nombre) VALUES ('Empleado');
+insert into pregunta_empleado (pregunta) VALUES ('Año de graduación');
+insert into pregunta_empleado (pregunta) VALUES ('Nombre primogénito');
+insert into pregunta_empleado (pregunta) VALUES ('Nombre abuela materna');
+insert into pregunta_empleado (pregunta) VALUES ('Nombre abuelo paterno');
+insert into empleado (usuario,rol_empleado_id,nombre,apellido,clave,pregunta_empleado_id,respuesta,estadoEmpleado)
+  VALUES ('admin',1,'Administrador','NULL','admin123',1,'2003','A');
+
+
+END$$
+
+
+DELIMITER ;
