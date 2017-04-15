@@ -3,8 +3,8 @@ DELIMITER $$
 CREATE PROCEDURE spInsertMaestros()
 BEGIN
 insert into estado_orden_produccion (nombre) VALUES('Procesando');
-insert into estado_orden_produccion (nombre) VALUES('Terminado');
 insert into estado_orden_produccion (nombre) VALUES('Enviado');
+insert into estado_orden_produccion (nombre) VALUES('Terminado');
 insert into estado_pedido (nombre) values ('Pendiente');
 insert into estado_pedido (nombre) values ('Aprobado');
 insert into estado_pedido (nombre) values ('Rechazado');
