@@ -36,12 +36,6 @@ INSERT INTO `pagina` VALUES (7,'Clinica','#','0',1,'fa fa-hospital-o'),
 --
 -- Volcado de datos para la tabla pagina_rol
 --
-INSERT INTO `rol` VALUES (1,'Administrador'),(2,'Doctor');
-
-
---
--- Volcado de datos para la tabla pagina_rol
---
 INSERT INTO `pagina_rol` VALUES (10,7,1),
 (11,8,1),
 (12,9,1),
